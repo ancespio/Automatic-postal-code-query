@@ -11,16 +11,6 @@
 - 🚀 **多编码支持** - 支持包含多个邮政编码的地址处理
 - 🛠️ **多版本选择** - 提供简化版、完整版和高级版三种实现
 
-## 📋 项目文件
-
-| 文件 | 描述 | 推荐度 |
-|------|------|--------|
-| `advanced_postal_lookup.py` | 高级版脚本，智能查询，错误处理完善 | ⭐️⭐️⭐️⭐️⭐️ |
-| `simple_postal_lookup.py` | 简化版脚本，轻量级，速度快 | ⭐️⭐️⭐️ |
-| `postal_code_lookup.py` | 完整版脚本，功能全面 | ⭐️⭐️⭐️⭐️ |
-| `create_sample.py` | 创建示例Excel文件 | - |
-| `sample_addresses.xlsx` | 示例数据文件 | - |
-
 ## 🛠️ 环境要求
 
 - **Python**: 3.7+
@@ -42,10 +32,10 @@ pip install -r requirements.txt
 
 ## 🎯 快速开始
 
-### 1. 创建测试数据
+### 1. 安装依赖
 
 ```bash
-python create_sample.py
+pip install -r requirements.txt
 ```
 
 ### 2. 运行查询脚本（推荐高级版）
@@ -58,7 +48,7 @@ python advanced_postal_lookup.py
 
 ```
 请输入Excel文件路径: sample_addresses.xlsx
-请输入地址列名: 地址
+请输入地址列名: 地址（请输入地址名称，而不是序号）
 请输入邮政编码输出列名 (默认为'邮政编码'): 
 是否使用无头模式（不显示浏览器窗口）? (y/n，默认y): y
 确认开始查询? (y/n): y
@@ -67,17 +57,6 @@ python advanced_postal_lookup.py
 ### 4. 查看结果
 
 查询完成后，会生成 `sample_addresses_with_postal_codes.xlsx` 文件。
-
-## 🎮 VS Code 集成
-
-本项目针对VS Code进行了优化，支持以下任务：
-
-- **Ctrl+Shift+P** → **Tasks: Run Task** → 选择任务：
-  - `运行高级查询脚本` ⭐️ 推荐
-  - `运行简化版查询脚本`
-  - `运行邮政编码查询脚本`
-  - `创建示例Excel文件`
-  - `安装依赖包`
 
 ## 📊 使用示例
 
@@ -96,22 +75,6 @@ python advanced_postal_lookup.py
 | 1 | 北京市朝阳区建国门外大街1号 | 国贸大厦 | 100020 |
 | 2 | 上海市浦东新区陆家嘴环路1000号 | 上海中心 | 200120 |
 | 3 | 广州市天河区珠江新城花城大道85号 | 广州塔附近 | 510623 |
-
-## 🎛️ 脚本版本对比
-
-| 特性 | 简化版 | 完整版 | 高级版 |
-|------|--------|--------|--------|
-| API查询 | ✅ | ✅ | ✅ |
-| 网页抓取 | ❌ | ✅ | ✅ |
-| 智能选择器 | ❌ | ✅ | ✅ |
-| 错误处理 | 基础 | 完善 | 优秀 |
-| 日志记录 | 基础 | 完善 | 详细 |
-| 调试支持 | ❌ | ✅ | ✅ |
-| 性能优化 | ✅ | ✅ | ✅ |
-
-## 🌐 目标网站
-
-查询网站：[http://dey.11185.cn/web/#/idtoolkitAddress](http://dey.11185.cn/web/#/idtoolkitAddress)
 
 ## 📝 支持的Excel格式
 
@@ -139,21 +102,11 @@ pip install -r requirements.txt
 
 ### 网站访问问题
 1. 检查网络连接
-2. 尝试使用简化版脚本
+2. 重新启动浏览器
 3. 查看日志文件了解详细错误信息
-
-## 📄 许可证
-
-MIT License - 可自由使用和修改
-
-## 📞 技术支持
-
-- 查看 `USAGE_GUIDE.md` 获取详细使用说明
-- 检查生成的日志文件了解运行详情
-- 参考项目代码注释获取技术细节
 
 ---
 
-**作者**: GitHub Copilot  
+**作者**: Ances PioPio
 **创建日期**: 2025年7月26日  
 **版本**: 1.0.0
