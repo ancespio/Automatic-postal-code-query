@@ -1,9 +1,4 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-高级邮政编码查询脚本
-使用Selenium真正访问 http://dey.11185.cn/web/#/idtoolkitAddress 网站
-"""
 
 import pandas as pd
 import time
